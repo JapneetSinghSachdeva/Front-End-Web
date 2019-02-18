@@ -1,0 +1,17 @@
+body{
+	background: url(images/camera.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.hero
+{
+	color: #2f3640;
+	text-align: center;
+	font-size: 60px;
+	letter-spacing: -.05em;
+	font-family: 'Ubuntu', sans-serif;
+}
+/*.image{
+	height: 100px;
+	width: 200px;
+}*/
