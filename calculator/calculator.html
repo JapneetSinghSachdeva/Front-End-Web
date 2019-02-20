@@ -1,0 +1,82 @@
+<html> 
+   <head> 
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script> 
+         //function that display value 
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+       <style> 
+      
+       /* input[type="button"] 
+         { 
+         background-color:red; 
+         color: #fff;  
+         width:100% 
+         } */
+  
+         #one
+         {
+            margin-left: 74%;
+         }
+         input[type="number"] 
+         { 
+         background-color: #fff; 
+         width:100% 
+         } 
+      </style> 
+   </head> 
+   <body> 
+      <div class="container-fluid">
+      <table> 
+         <tr> 
+            <td><input type="text" class="text-center text-dark text-lg" id="result"></td> 
+            
+            <td><input type="button" value="C" class="btn btn-lg btn-success" onclick="clr()"> </td> 
+         </tr> 
+         <tr> 
+          <td><input type="button"  id="one" value="1" class="btn btn-lg btn-primary" onclick="dis('1')"> </td> 
+            <td><input type="button"  value="2" class="btn btn-lg btn-primary" onclick="dis('2')"> </td> 
+            <td><input type="button"  value="3"  class="btn btn-lg btn-primary" onclick="dis('3')"> </td> 
+            <td><input type="button"  value="/" class="btn btn-lg btn-success" onclick="dis('/')"> </td>
+         </tr> 
+
+         <tr>
+             <td><input type="button" id="one"  value="4" class="btn btn-lg btn-primary" onclick="dis('4')"> </td> 
+            <td><input type="button"  value="5" class="btn btn-lg btn-primary" onclick="dis('5')"> </td> 
+            <td><input type="button"  value="6" class="btn btn-lg btn-primary" onclick="dis('6')"> </td> 
+            <td><input type="button"  value="-" class="btn btn-lg btn-success" onclick="dis('-')"> </td>  
+         </tr>
+
+         <tr> 
+            <td><input type="button" id="one" value="7" class="btn btn-lg btn-primary" onclick="dis('7')"> </td> 
+            <td><input type="button"  value="8" class="btn btn-lg btn-primary" onclick="dis('8')"> </td> 
+            <td><input type="button"  value="9" class="btn btn-lg btn-primary" onclick="dis('9')"> </td> 
+            <td><input type="button"  value="+" class="btn btn-lg btn-success" onclick="dis('+')"> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" id="one" value="." class="btn btn-lg btn-success" onclick="dis('.')"> </td> 
+            <td><input type="button"  value="0" class="btn btn-lg btn-primary" onclick="dis('0')"> </td> 
+            <td><input type="button"  value="=" class="btn btn-lg btn-success" onclick="solve()"> </td> 
+            <td><input type="button"  value="*" class="btn btn-lg btn-success" onclick="dis('+')"> </td> 
+
+         </tr> 
+
+      </table> 
+      </div> 
+   </body> 
+</html> 
